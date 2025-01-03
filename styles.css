@@ -1,0 +1,63 @@
+@media(min-width: 768px) {
+	.news-input {
+		width: 55%;
+	}
+}
+
+.draggable {
+	background-color: salmon;
+	border: 1px solid #000;
+	resize: both; /* Allows resizing in both directions */
+	overflow: auto; /* Ensures content stays visible if resized smaller */
+}
+
+/* p { */
+/* 	color: aqua; */
+/* 	border: 2px solid powderblue; */
+/* 	margin: 50px; */
+/* } */
+
+i {
+	font-size: 24px;
+}
+
+.inverted-icon {
+	filter: invert(1);
+}
+
+.compressed-paragraph {
+	width: 600px; /* Set the width you want */
+	word-wrap: break-word; /* Break long words to fit within the width */
+	font-size: 20px;
+}
+
+.aboutme-paragraph {
+	width: 700px; /* Set the width you want */
+	word-wrap: break-word; /* Break long words to fit within the width */
+	font-size: 20px;
+	text-align: left;
+}
+
+.list-skills {
+	width: clamp(); /* Set the width you want */
+	word-wrap: break-word; /* Break long words to fit within the width */
+	font-size: 20px;
+	text-align: left;
+}
+
+body {
+    scroll-behavior: smooth; /* Enables smooth scrolling */
+	background-color: #212529;
+}
+
+.fade-in-section {
+	opacity: 0; /* Initially hidden */
+	transform: translateY(20px); /* Slightly shifted down */
+	transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+.fade-in-visible {
+	opacity: 1;
+	transform: translateY(0); /* Moves back to original position */
+}
+
